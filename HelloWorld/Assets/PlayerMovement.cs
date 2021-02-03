@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Create a variable for forward force
     public float forwardForce = 2000f;
+    public float sidewaysForce = 500f;
 
     // Update is called once per frame,
     // We use FixedUpdate to mess with physics
@@ -21,14 +22,14 @@ public class PlayerMovement : MonoBehaviour
         {
             // Add right force for every new frame
             // when "d" key is pressed
-            rb.AddForce( 500 * Time.deltaTime, 0, 0);
+            rb.AddForce( sidewaysForce * Time.deltaTime, 0, 0 );
         }
 
         if ( Input.GetKey("a") )
         {
             // Add right force for every new frame
             // when "a" key is pressed
-            rb.AddForce( -500 * Time.deltaTime, 0, 0);
+            rb.AddForce( -sidewaysForce * Time.deltaTime, 0, 0 );
         }
     }
 }

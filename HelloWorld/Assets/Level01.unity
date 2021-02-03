@@ -245,7 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 563748372}
-  forwardForce: 500
+  forwardForce: 1000
+  sidewaysForce: 600
 --- !u!1 &743321353
 GameObject:
   m_ObjectHideFlags: 0
