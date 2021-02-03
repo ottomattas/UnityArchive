@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Reference to the Rigidbody component
+    public Rigidbody rb;
 
-    // Update is called once per frame
-    void Update()
+    // Create a variable for forward force
+    public float forwardForce = 2000f;
+
+    // Update is called once per frame,
+    // We use FixedUpdate to mess with physics
+    void FixedUpdate()
     {
-        
+        // Add forward force for every new frame
+        rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+    
+        if ( Input.GetKey("d") )
+        {
+            // Add right force for every new frame
+            // when "d" key is pressed
+            rb.AddForce( 500 * Time.deltaTime, 0, 0);
+        }
+
+        if ( Input.GetKey("a") )
+        {
+            // Add right force for every new frame
+            // when "a" key is pressed
+            rb.AddForce( -500 * Time.deltaTime, 0, 0);
+        }
     }
 }
