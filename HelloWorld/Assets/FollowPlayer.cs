@@ -7,6 +7,8 @@ public class FollowPlayer : MonoBehaviour
 
     // Store the reference for the player
     public Transform player;
+    // Va
+    public Vector3 offset;
 
     // Update is called once per frame
     void Update()
