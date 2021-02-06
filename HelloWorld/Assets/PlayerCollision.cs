@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+
+    // Stop player movement on collision
+    public PlayerMovement movement;
+
     // Specify method for when object collides with something
     void OnCollisionEnter (Collision collisionInfo)
     {
