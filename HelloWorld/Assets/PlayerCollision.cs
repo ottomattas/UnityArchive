@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     // Specify method for when object collides with something
-    void OnCollisionEnter ()
+    void OnCollisionEnter (Collision collisionInfo)
     {
         // Print message to console
-        Debug.Log("We hit something!");
+        Debug.Log(collisionInfo.collider.name);
     }
 }
