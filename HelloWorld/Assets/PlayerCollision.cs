@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // Specify method for when object collides with something
+    void OnCollisionEnter ()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Print message to console
+        Debug.Log("We hit something!");
     }
 }
