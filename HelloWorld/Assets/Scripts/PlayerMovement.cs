@@ -22,14 +22,14 @@ public class PlayerMovement : MonoBehaviour
         {
             // Add right force for every new frame
             // when "d" key is pressed
-            rb.AddForce( sidewaysForce * Time.deltaTime, 0, 0 );
+            rb.AddForce( sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         if ( Input.GetKey("a") )
         {
             // Add right force for every new frame
             // when "a" key is pressed
-            rb.AddForce( -sidewaysForce * Time.deltaTime, 0, 0 );
+            rb.AddForce( -sidewaysForce * Time.deltaTime, 0, 0,  ForceMode.VelocityChange);
         }
     }
 }
