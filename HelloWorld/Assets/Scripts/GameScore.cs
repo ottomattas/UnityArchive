@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class GameScore : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Define variable to capture player position
+    public Transform player;
 
     // Update is called once per frame
     void Update()
     {
-        
+        // Print player Z position to console
+        Debug.Log(player.position.z);
     }
 }
