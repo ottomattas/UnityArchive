@@ -16,8 +16,9 @@ public class GameScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //
+        // Update text component with player position
         scoreText.text = player.position.z.ToString("0");
+        
         // Print player Z position to console
         // Debug.Log(player.position.z);
     }
