@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GameScore : MonoBehaviour
 {
-    // Define variable to capture player position
+    // Define variable to capture Transform component
+    // of a player and call it "player"
     public Transform player;
 
     // Update is called once per frame
