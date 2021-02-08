@@ -8,11 +8,17 @@ public class GameScore : MonoBehaviour
     // Define variable to capture Transform component
     // of a player and call it "player"
     public Transform player;
+    
+    // Define variable to capture UI Text component
+    // and call it "scoreText"
+    public Text scoreText;
 
     // Update is called once per frame
     void Update()
     {
+        //
+        scoreText.text = player.position.z.ToString();
         // Print player Z position to console
-        Debug.Log(player.position.z);
+        // Debug.Log(player.position.z);
     }
 }
