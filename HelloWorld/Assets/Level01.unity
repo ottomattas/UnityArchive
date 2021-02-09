@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartDelay: 3
+  completeLevelUI: {fileID: 431024786}
 --- !u!1001 &51446280
 PrefabInstance:
   m_ObjectHideFlags: 0
