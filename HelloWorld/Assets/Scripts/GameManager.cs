@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     // Create a public method for completing the level
     public void CompleteLevel ()
     {
+        // Enable end screen
+        completeLevelUI.SetActive(true);
         Debug.Log("LEVEL COMPLETE!");
     }
 
