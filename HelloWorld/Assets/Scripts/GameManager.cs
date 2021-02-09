@@ -9,7 +9,10 @@ public class GameManager : MonoBehaviour
     // Write custom function
     public void EndGame ()
     {
-        gameHasEnded = true;
-        Debug.Log("GAME OVER!");
+        if (gameHasEnded == false)
+        {
+            gameHasEnded = true;
+            Debug.Log("GAME OVER!");
+        }
     }
 }
