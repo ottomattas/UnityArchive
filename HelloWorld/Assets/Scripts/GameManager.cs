@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
 
     // Create a public variable for delaying restart, default 1 sec
     public float restartDelay = 1f;
+
+    //Create a public variable for grabbing the end screen
+    public GameObject completeLevelUI;
 
     // Create a public method for completing the level
     public void CompleteLevel ()
