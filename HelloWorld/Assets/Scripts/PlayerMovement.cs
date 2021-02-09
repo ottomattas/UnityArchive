@@ -30,6 +30,13 @@ public class PlayerMovement : MonoBehaviour
             // Add right force for every new frame
             // when "a" key is pressed
             rb.AddForce( -sidewaysForce * Time.deltaTime, 0, 0,  ForceMode.VelocityChange);
+        
+        }
+
+        // Check if the player has fallen off the ground platform
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
