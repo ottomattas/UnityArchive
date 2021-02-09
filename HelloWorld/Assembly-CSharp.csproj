@@ -36,11 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\LevelComplete.cs" />
      <Compile Include="Assets\Scripts\EndTrigger.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameScore.cs" />
+     <Compile Include="Assets\Scripts\LevelComplete.cs" />
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerGravityForceExample.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
