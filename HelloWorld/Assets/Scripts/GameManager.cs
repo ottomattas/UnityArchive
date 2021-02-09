@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     // Create a custom Restart method
     void Restart ()
     {
-
+        // Load currently active scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
