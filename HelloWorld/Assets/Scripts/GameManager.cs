@@ -9,8 +9,14 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
 
     // Create a public variable for delaying restart, default 1 sec
-
     public float restartDelay = 1f;
+
+    // Create a public method for completing the level
+    public void CompleteLevel ()
+    {
+        Debug.Log("LEVEL COMPLETE!");
+    }
+
     // Write custom EndGame method
     public void EndGame ()
     {
