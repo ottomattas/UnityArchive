@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
             // Print to console
             Debug.Log("GAME OVER!");
 
-            // Call Restart method
-            Restart();
+            // Call Restart method with invoke to have a delay
+            Invoke("Restart", restartDelay);
         }
     }
 
