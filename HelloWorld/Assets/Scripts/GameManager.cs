@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +18,15 @@ public class GameManager : MonoBehaviour
 
             // Print to console
             Debug.Log("GAME OVER!");
+
+            // Call Restart method
+            Restart();
         }
+    }
+
+    // Create a custom Restart method
+    void Restart
+    {
+
     }
 }
