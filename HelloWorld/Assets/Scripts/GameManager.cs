@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     // Create a boolean variable to check for game end
     bool gameHasEnded = false;
 
+    // Create a public variable for delaying restart, default 1 sec
+
+    public float restartDelay = 1f;
     // Write custom EndGame method
     public void EndGame ()
     {
