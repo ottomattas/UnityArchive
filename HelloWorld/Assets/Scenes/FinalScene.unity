@@ -374,6 +374,7 @@ GameObject:
   - component: {fileID: 1448107811}
   - component: {fileID: 1448107810}
   - component: {fileID: 1448107812}
+  - component: {fileID: 1448107813}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -453,6 +454,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f9d6738885f4400a3916ba2c866e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1448107813
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448107808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 023a81d39c33d478cb4731dcfe0a2948, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1467055482
 GameObject:
   m_ObjectHideFlags: 0
