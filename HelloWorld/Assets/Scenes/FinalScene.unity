@@ -373,6 +373,7 @@ GameObject:
   - component: {fileID: 1448107809}
   - component: {fileID: 1448107811}
   - component: {fileID: 1448107810}
+  - component: {fileID: 1448107812}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -440,6 +441,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448107808}
   m_CullTransparentMesh: 0
+--- !u!114 &1448107812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448107808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f9d6738885f4400a3916ba2c866e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1467055482
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +466,6 @@ GameObject:
   - component: {fileID: 1467055485}
   - component: {fileID: 1467055484}
   - component: {fileID: 1467055487}
-  - component: {fileID: 1467055488}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -523,7 +535,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1467055485}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1448107808}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1467055485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,18 +599,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.29803923}
   m_EffectDistance: {x: 0, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &1467055488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467055482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e6cdcc9f4830459092f8313037fed88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1650906806
 GameObject:
   m_ObjectHideFlags: 0
