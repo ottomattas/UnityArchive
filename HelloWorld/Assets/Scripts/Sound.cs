@@ -16,6 +16,8 @@ public class Sound
     // Reference to the audio clip
     public AudioClip clip;
 
+    // Add slider to volume with min/max
+    [Range(0f, 1f)]
     // Reference to the audio volume
     public float volume;
 
