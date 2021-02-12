@@ -24,6 +24,12 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    // Create start method to call theme music
+    void Start()
+    {
+        Play("Theme");
+    }
+
     // Create a method to play a certain sound directly from source
     public void Play (string name)
     {
