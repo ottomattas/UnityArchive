@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -9,6 +9,9 @@ using UnityEngine.Audio;
 // Create a sound class
 public class Sound
 {
+
+    // Name the audio clip
+    public string name;
 
     // Reference to the audio clip
     public AudioClip clip;
