@@ -945,6 +945,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75bf01d80bfa4aa6b733536e35df1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: ebfdc7f06f6ff4e5aa296f9c851f6f12, type: 3}
+    volume: 0
+    pitch: 0
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
 --- !u!1001 &836792161571502141
 PrefabInstance:
   m_ObjectHideFlags: 0
