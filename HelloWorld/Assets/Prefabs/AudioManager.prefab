@@ -50,21 +50,21 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: PlayerBump
-    clip: {fileID: 8300000, guid: 71d322781f6604f35a15682ff6050eff, type: 3}
-    volume: 1
-    pitch: 1.5
-    loop: 0
-    source: {fileID: 0}
-  - name: PlayerFall
-    clip: {fileID: 8300000, guid: bf126624325c34a72a09c34016c23537, type: 3}
-    volume: 1
-    pitch: 1.5
-    loop: 0
-    source: {fileID: 0}
   - name: PlayerDeath
     clip: {fileID: 8300000, guid: 288522797a7de42b2a711c1f7ba329f5, type: 3}
     volume: 1
-    pitch: 1.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerLevel
+    clip: {fileID: 8300000, guid: 8296f1cf5d73a4ff4be282173dca6b30, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerWin
+    clip: {fileID: 8300000, guid: bf126624325c34a72a09c34016c23537, type: 3}
+    volume: 0.5
+    pitch: 1
     loop: 0
     source: {fileID: 0}
