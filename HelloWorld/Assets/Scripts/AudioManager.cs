@@ -16,9 +16,8 @@ public class AudioManager : MonoBehaviour
         foreach(Sound s in sounds)
         {
             // Get current gameobject and add it to audiosource
-            gameObject.AddComponent<AudioSource>();
-            // Define the parameters in array
             s.source = gameObject.AddComponent<AudioSource>();
+            // Define the parameters in array
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
@@ -28,6 +27,7 @@ public class AudioManager : MonoBehaviour
     // Create a method to play a certain sound directly from source
     public void Play (string name)
     {
+        // Store the sound in variable s
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
     }
