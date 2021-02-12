@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LevelComplete : MonoBehaviour
 {
+
+    // Create a public method to load sound upon completing level
+    public void LoadSoundLevel ()
+    {
+        // Play a sound upon collision
+            FindObjectOfType<AudioManager>().Play("PlayerWin");
+    }
+
     // Create a public method to load next level
     public void LoadNextLevel ()
     {
