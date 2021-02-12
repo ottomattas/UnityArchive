@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
         // For each sound s in our sounds array
         foreach(Sound s in sounds)
         {
+            // Get current gameobject and add it to audiosource
+            gameObject.AddComponent<AudioSource>();
             // Define the parameters in array
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
