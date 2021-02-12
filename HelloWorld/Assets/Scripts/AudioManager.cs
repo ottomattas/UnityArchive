@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     // Create public array for sounds
     public Sound[] sounds;
-    
+
     // Static reference to the AudioManager instance
     public static AudioManager instance;
     
@@ -28,6 +28,10 @@ public class AudioManager : MonoBehaviour
             // is called before Destory, we return
             return;
         }
+
+        // Keep AudioManager persistent between scenes
+        DontDestroyOnLoad(gameObject);
+
         // For each sound s in our sounds array
         foreach(Sound s in sounds)
         {
