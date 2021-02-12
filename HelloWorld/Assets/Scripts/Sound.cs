@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
+// Make it serializable
+[System.Serializable]
+
 // Create a sound class
 public class Sound
 {
