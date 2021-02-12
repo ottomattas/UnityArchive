@@ -27,4 +27,9 @@ public class Sound
     // Reference to the audio pitch
     public float pitch;
     
+    // Reference the audio source and hide in inspector
+    // because we want to call this automatically. It is public but won't show
+    [HideInInspector]
+    public AudioSource source;
+    
 }
