@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -23,6 +23,7 @@ public class Sound
 
     // Add slider to pitch with min/max
     [Range(.1f, 3f)]
+
     // Reference to the audio pitch
     public float pitch;
     
