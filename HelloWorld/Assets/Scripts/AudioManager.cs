@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -35,6 +35,15 @@ public class AudioManager : MonoBehaviour
     {
         // Store the sound in variable s
         Sound s = Array.Find(sounds, sound => sound.name == name);
+        
+        // If no sound with sound.name exists, simply return (to avoid error)
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+            return;
+
         s.source.Play();
     }
 }
