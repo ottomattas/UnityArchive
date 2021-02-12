@@ -15,6 +15,19 @@ public class AudioManager : MonoBehaviour
     // Awake is called before the Start method
     void Awake()
     {
+        // Check for previous audiomanager instance
+        if (instance == null)
+            // Set instance to this game object
+            instance = this;
+        else
+        {
+            // Destroy the object not to spin new one up
+            // as we keep it persistent below
+            Destroy(gameObject);
+            // To make sure not anything else
+            // is called before Destory, we return
+            return;
+        }
         // For each sound s in our sounds array
         foreach(Sound s in sounds)
         {
