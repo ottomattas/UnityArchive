@@ -23,7 +23,6 @@ public class Sound
 
     // Add slider to pitch with min/max
     [Range(.1f, 3f)]
-
     // Reference to the audio pitch
     public float pitch;
 
