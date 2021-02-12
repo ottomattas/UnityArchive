@@ -48,7 +48,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c9b5ab84d820f49288df8633377d9534, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: PlayerBump
     clip: {fileID: 8300000, guid: 71d322781f6604f35a15682ff6050eff, type: 3}
