@@ -21,6 +21,8 @@ public class Sound
     // Reference to the audio volume
     public float volume;
 
+    // Add slider to pitch with min/max
+    [Range(.1f, 3f)]
     // Reference to the audio pitch
     public float pitch;
     
