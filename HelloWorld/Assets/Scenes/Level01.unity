@@ -946,18 +946,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
+  - name: PlayerBump
+    clip: {fileID: 8300000, guid: 71d322781f6604f35a15682ff6050eff, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
   - name: PlayerDeath
-    clip: {fileID: 8300000, guid: ebfdc7f06f6ff4e5aa296f9c851f6f12, type: 3}
-    volume: 0
-    pitch: 0
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+    clip: {fileID: 8300000, guid: 288522797a7de42b2a711c1f7ba329f5, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
 --- !u!1001 &836792161571502141
 PrefabInstance:
   m_ObjectHideFlags: 0
