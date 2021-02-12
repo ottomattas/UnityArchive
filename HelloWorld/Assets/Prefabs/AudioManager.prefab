@@ -46,7 +46,7 @@ MonoBehaviour:
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: c9b5ab84d820f49288df8633377d9534, type: 3}
-    volume: 1
+    volume: 0.75
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -65,6 +65,12 @@ MonoBehaviour:
   - name: PlayerWin
     clip: {fileID: 8300000, guid: bf126624325c34a72a09c34016c23537, type: 3}
     volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerMove
+    clip: {fileID: 8300000, guid: 5e8ca0e4e07b34f169a5f98e78f54d55, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
