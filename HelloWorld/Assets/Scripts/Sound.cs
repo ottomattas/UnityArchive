@@ -26,6 +26,9 @@ public class Sound
     // Reference to the audio pitch
     public float pitch;
 
+    // To loop the theme sound
+    public bool loop;
+    
     // Reference the audio source and hide in inspector
     // because we want to call this automatically. It is public but won't show
     [HideInInspector]
