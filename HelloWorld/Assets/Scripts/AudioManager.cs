@@ -8,8 +8,8 @@ public class AudioManager : MonoBehaviour
     // Create public array for sounds
     public Sound[] sounds;
     
-    // Start is called before the first frame update
-    void Start()
+    // Awake is called before the Start method
+    void Awake()
     {
         
     }
