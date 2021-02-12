@@ -17,11 +17,11 @@ public class PlayerCollision : MonoBehaviour
             movement.enabled = false;
             Debug.Log("We hit an obstacle!");
 
-            // Play a sound upon collision
-            FindObjectOfType<AudioManager>().Play("PlayerBump");
-
             // Find GameManager object and call EndGame method
             FindObjectOfType<GameManager>().EndGame();
+
+            // Play a sound upon collision
+            FindObjectOfType<AudioManager>().Play("PlayerDeath");
         }
         // Print message to console
         //Debug.Log(collisionInfo.collider.name);
