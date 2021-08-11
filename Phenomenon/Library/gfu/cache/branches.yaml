@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-08-11T10:51:49.485+02:00
+  lastUpdatedAtString: 2021-08-11T11:03:23.518+02:00
   initializedAtString: 2021-08-11T10:51:49.475+02:00
   localBranches:
   - name: main
     tracking: origin/main
   remoteBranches:
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/main
     tracking: '[None]'
   remotes:
   - name: origin
@@ -44,9 +46,15 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+      - main
     subKeyValues:
     - Values:
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/ottomattas/UnityPlayground.git
+        trackingBranch: 
+      - name: main
         remote:
           name: origin
           url: https://github.com/ottomattas/UnityPlayground.git
